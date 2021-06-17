@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce-app-with-react",
+  "version": "1.0.0",
+  "description": "Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandraj8756/E-commerce-app-with-React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandraj8756/E-commerce-app-with-React/issues"
+  },
+  "homepage": "https://github.com/anandraj8756/E-commerce-app-with-React#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
