@@ -19,8 +19,8 @@ const data = {
   ],
     products: [
       {
-        _id: '1',
-        name: 'Raspberry Pi4',
+        
+        name: 'Raspberry Pi',
         category: 'Science',
         image: '/images/p2.jpg',
         price: 120,
@@ -30,8 +30,19 @@ const data = {
         description: 'Learn About Iot',
       },
       {
-        _id: '2',
-        name: 'Raspberry Pi4',
+        
+        name: 'Kids Story',
+        category: 'School',
+        image: '/images/p2.jpg',
+        price: 120,
+        brand: 'Science',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'Read Story',
+      },
+      {
+        
+        name: 'Raspberry Pi',
         category: 'Science',
         image: '/images/p2.jpg',
         price: 120,
@@ -41,8 +52,8 @@ const data = {
         description: 'Learn About Iot',
       },
       {
-        _id: '3',
-        name: 'Raspberry Pi4',
+        
+        name: 'Raspberry Pi',
         category: 'Science',
         image: '/images/p2.jpg',
         price: 120,
@@ -52,8 +63,8 @@ const data = {
         description: 'Learn About Iot',
       },
       {
-        _id: '4',
-        name: 'Raspberry Pi4',
+       
+        name: 'Raspberry Pi',
         category: 'Science',
         image: '/images/p2.jpg',
         price: 120,
@@ -63,19 +74,8 @@ const data = {
         description: 'Learn About Iot',
       },
       {
-        _id: '5',
-        name: 'Raspberry Pi4',
-        category: 'Science',
-        image: '/images/p2.jpg',
-        price: 120,
-        brand: 'Technology',
-        rating: 4.5,
-        numReviews: 10,
-        description: 'Learn About Iot',
-      },
-      {
-        _id: '6',
-        name: 'Raspberry Pi4',
+        
+        name: 'Raspberry Pi',
         category: 'Science',
         image: '/images/p2.jpg',
         price: 120,

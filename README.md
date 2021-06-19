@@ -90,14 +90,14 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     3. use action in ProductScreen.js
     4. add /api/product/:id to backend api
 
-14. Handle Add To Cart Button
+8. Handle Add To Cart Button
     1. Handle Add To Cart in ProductScreen.js
     2. create CartScreen.js    
 
 
 
 
-8. Create Sample Users In MongoDB
+9. Create Sample Users In MongoDB
     1. npm install mongoose
     2. connect to mongodb
     3. create config.js
@@ -109,6 +109,12 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     9. create productSchema and productModel
     10. create userRoute
     11. Seed sample data    
+
+10. Create Sample Products In MongoDB
+    1. create models/productModel.js
+    2. create productSchema and productModel
+    3. create productRoute
+    4. Seed sample data
 
 
 
