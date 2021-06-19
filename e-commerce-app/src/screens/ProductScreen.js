@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Rating from '../components/Rating';
 import data from '../data';
+import MessageBox from '../components/MessageBox';
+import LoadingBox from '../components/LoadingBox';
 
 export default function ProductScreen(props) {
   const product = data.products.find((x) => x._id === props.match.params.id);
+
+  const [rating, setRating] = useState(0);
+  const [comment, setComment] = useState('');
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (comment && rating) {
+      alert('Please enter comment and rating');
+    }
+  };
+
+
+
+
+
   if (!product) {
     return <div> Product Not Found</div>;
   }
@@ -59,6 +76,61 @@ export default function ProductScreen(props) {
               </li>
             </ul>
           </div>
+        </div>
+        <div>
+          <h2 id="reviews">Reviews</h2>
+          {(
+            <MessageBox>There is no review</MessageBox>
+          )}
+          <ul>
+
+            <li>
+              {(
+                <form className="form" onSubmit={submitHandler}>
+                  <div>
+                    <h2>Write a customer review</h2>
+                  </div>
+                  <div>
+                    <label htmlFor="rating">Rating</label>
+                    <select
+                      id="rating"
+                      value={rating}
+                      onChange={(e) => setRating(e.target.value)}
+                    >
+                      <option value="">Select...</option>
+                      <option value="1">1- Poor</option>
+                      <option value="2">2- Fair</option>
+                      <option value="3">3- Good</option>
+                      <option value="4">4- Very good</option>
+                      <option value="5">5- Excelent</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="comment">Comment</label>
+                    <textarea
+                      id="comment"
+                      value={comment}
+                      onChange={(e) => setComment(e.target.value)}
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label />
+                    <button className="primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                  <div>
+                    {<LoadingBox></LoadingBox>}
+                    {(
+                      <MessageBox variant="danger">
+                        { }
+                      </MessageBox>
+                    )}
+                  </div>
+                </form>
+              )}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
