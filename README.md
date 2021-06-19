@@ -131,7 +131,10 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     3. create signin constants, actions and reducers
     4. Update Header based on user login
 
-
+13. Implement SignIn Action
+    1. create signin constants, actions and reducers
+    2. add reducer to store.js
+    3. use action in SigninScreen.js
 
 
 
