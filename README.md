@@ -76,6 +76,8 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     3. initState= {products:[]}
     4. reducer = (state, action) => switch LOAD_PRODUCTS: {products: action.payload}
     5. export default createStore(reducer, initState)
+    5. add redux devtools to chrome exten...
+    5. npm install redux-thunk
     6. Edit HomeScreen.js
     7. shopName = useSelector(state=>state.products)
     8. const dispatch = useDispatch()
@@ -97,7 +99,7 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     11. Seed sample data    
 
 
-    
+
 
 
 
