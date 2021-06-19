@@ -84,8 +84,16 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     9. useEffect(()=>dispatch({type: LOAD_PRODUCTS, payload: data})
     10. Add store to index.js   
 
+7. Add Redux to Product Screen
+    1. create product details constants, actions and reducers
+    2. add reducer to store.js
+    3. use action in ProductScreen.js
+    4. add /api/product/:id to backend api
 
-7. Create Sample Users In MongoDB
+
+
+
+8. Create Sample Users In MongoDB
     1. npm install mongoose
     2. connect to mongodb
     3. create config.js
