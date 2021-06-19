@@ -2,8 +2,14 @@ import express from 'express';
 import data from './data.js';
 import  mongoose  from 'mongoose';
 
+import userRouter from './routers/userRouter.js';
 
 const app = express();
+mongoose.connect('mongodb://localhost/E-commerce-app-with-React', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
 
 
 app.get('/api/products/:id', (req, res) => {
@@ -20,14 +26,16 @@ app.get('/api/products', (req, res) => {
 
 });
 
-app.use((err, req, res, next) => {
-    res.status(500).send({ message: err.message });
-  });
 
 
+app.use('/api/users', userRouter);
 
 app.get('/', (req, res) => {
     res.send('Server is ready');
+});
+
+app.use((err, req, res, next) => {
+  res.status(500).send({ message: err.message });
 });
 
 const port = process.env.PORT || 5000;

@@ -90,6 +90,10 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     3. use action in ProductScreen.js
     4. add /api/product/:id to backend api
 
+14. Handle Add To Cart Button
+    1. Handle Add To Cart in ProductScreen.js
+    2. create CartScreen.js    
+
 
 
 
