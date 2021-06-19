@@ -125,6 +125,14 @@ Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoo
     6. return token and data
     7. test it using postman    
 
+12. Design SignIn Screen
+    1. create SigninScreen
+    2. render email and password fields
+    3. create signin constants, actions and reducers
+    4. Update Header based on user login
+
+
+
 
 
 
